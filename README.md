@@ -189,8 +189,8 @@ Le frontend sera accessible sur **http://localhost:5173** (Vite).
 
 ---
 
----
 ### 10. Design & UX
+
 
 Le frontend adopte une esthétique de librairie haut de gamme :
 
@@ -205,6 +205,8 @@ design entièrement responsive (mobile-first)
 navbar transparente qui se condense au scroll, panier animé
 
 cartes de livres avec "couvertures" générées dynamiquement par dégradé
+
+---
 
 ## 11. Maquettes, conception visuelle et démonstration
 
