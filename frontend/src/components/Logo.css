@@ -1,0 +1,49 @@
+.lg-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  line-height: 1;
+}
+.lg-logo__mark {
+  width: var(--logo-size, 42px);
+  height: var(--logo-size, 42px);
+  flex-shrink: 0;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(31, 77, 58, 0.12));
+  transition: transform 0.4s var(--ease);
+}
+.lg-logo:hover .lg-logo__mark { transform: scale(1.05); }
+
+.lg-logo__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.lg-logo__name {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  line-height: 1;
+}
+.lg-logo__sub {
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 500;
+}
+
+/* ---- Variants ---- */
+.lg-logo--light .lg-logo__name { color: var(--ivory); }
+.lg-logo--light .lg-logo__sub { color: var(--gold-soft); }
+.lg-logo--light .lg-logo__mark { filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3)); }
+
+@media (max-width: 600px) {
+  .lg-logo { gap: 10px; }
+  .lg-logo__name { font-size: 1rem; }
+  .lg-logo__sub { display: none; }
+}

@@ -1,0 +1,108 @@
+.auth {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+}
+@media (max-width: 900px) {
+  .auth { grid-template-columns: 1fr; }
+}
+
+.auth__panel { padding: 80px 60px; display: flex; align-items: center; }
+@media (max-width: 600px) { .auth__panel { padding: 60px 24px; } }
+
+.auth__panel--aside {
+  position: relative;
+  color: var(--ivory);
+  background:
+    radial-gradient(ellipse 80% 60% at 30% 20%, rgba(201, 169, 97, 0.28), transparent 70%),
+    linear-gradient(160deg, var(--ink) 0%, var(--forest) 100%);
+  overflow: hidden;
+}
+.auth__panel--aside::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 30px,
+      rgba(201, 169, 97, 0.05) 30px,
+      rgba(201, 169, 97, 0.05) 31px
+    );
+}
+@media (max-width: 900px) {
+  .auth__panel--aside { display: none; }
+}
+
+.auth__aside-inner {
+  position: relative;
+  max-width: 440px;
+  margin: 0 auto;
+}
+.auth__aside-eyebrow { color: var(--gold-soft) !important; }
+.auth__panel--aside h2 {
+  color: var(--ivory);
+  font-size: clamp(2rem, 3.4vw, 2.8rem);
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+.auth__panel--aside p {
+  color: rgba(250, 247, 242, 0.7);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.auth__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.auth__list li {
+  font-size: 0.95rem;
+  color: rgba(250, 247, 242, 0.85);
+  letter-spacing: 0.02em;
+}
+
+.auth__panel--form {
+  background: var(--bg-elev);
+  justify-content: center;
+}
+.auth__form-wrap {
+  width: 100%;
+  max-width: 420px;
+}
+.auth__brand {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.auth__form-wrap h1 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+.auth__sub {
+  color: var(--text-mute);
+  font-size: 1rem;
+  margin-bottom: 32px;
+}
+
+.auth__submit {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.auth__switch {
+  margin-top: 28px;
+  text-align: center;
+  color: var(--text-mute);
+  font-size: 0.92rem;
+}
+.auth__switch a {
+  color: var(--gold-deep);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
