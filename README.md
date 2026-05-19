@@ -189,25 +189,76 @@ Le frontend sera accessible sur **http://localhost:5173** (Vite).
 
 ---
 
-## 10. Design & UX
+---
 
-Le frontend adopte une esthétique de **librairie haut de gamme** :
-- palette ivoire / encre / or / bourgogne
-- typographie *Cormorant Garamond* (titres) + *Inter* (texte)
-- glassmorphism, micro-animations Framer Motion, hover effects
-- design entièrement responsive (mobile-first)
-- navbar transparente qui se condense au scroll, panier animé
-- cartes de livres avec "couvertures" générées dynamiquement par dégradé
+## 11. Maquettes, conception visuelle et démonstration
+
+Dans le cadre de l’étape 3, des maquettes visuelles ont été préparées afin de représenter les principales interfaces du site livresgourmands.net.
+
+### Maquettes Figma
+
+Les maquettes Figma présentent les écrans principaux du site en version desktop et mobile :
+
+- page d’accueil
+- catalogue des ouvrages
+- fiche détail d’un ouvrage
+- panier
+- page de connexion
+- dashboard administrateur
+- gestion des ouvrages
+- versions mobiles principales
+
+Lien Figma :  
+[Ajouter le lien Figma ici]
+
+### Prototype Adobe XD
+
+Le prototype Adobe XD n’a pas été réalisé séparément.  
+Les principales interactions sont démontrées directement à travers le front-end React fonctionnel et la vidéo de démonstration.
+
+### Dossier de conception
+
+Le dossier de conception de l’étape 3 est disponible dans le dossier `docs/`.
+
+Fichier :  
+`docs/dossier_conception_etape3.pdf`
+
+Ce document présente :
+
+- l’identité visuelle du projet
+- les choix de couleurs et de typographie
+- la structure des pages
+- les choix UX/UI
+- le responsive design
+- l’intégration front-end / back-end
+- les limites et améliorations possibles
+
+### Vidéo de démonstration
+
+Une courte vidéo de démonstration présente le fonctionnement du projet :
+
+- lancement du back-end
+- lancement du front-end
+- affichage des ouvrages depuis l’API
+- consultation d’une fiche produit
+- ajout au panier
+- gestion du panier
+- connexion administrateur
+- accès au dashboard
+- gestion des ouvrages et catégories
+
+Lien vidéo :  
+[Ajouter le lien de la vidéo ici]
 
 ---
 
-## 11. Tests de l'API
+## 12. Tests de l'API
 
 Les tests Postman réalisés à l'étape 2 restent disponibles dans `docs/screenshots/`.
 
 ---
 
-## 12. Améliorations possibles
+## 13. Améliorations possibles
 
 - Intégration d'un module de paiement réel (Stripe)
 - Section avis lecteurs persistée en base
@@ -217,7 +268,7 @@ Les tests Postman réalisés à l'étape 2 restent disponibles dans `docs/screen
 
 ---
 
-## 13. Conclusion
+## 14. Conclusion
 
 Ce projet en trois étapes nous a permis de mettre en pratique :
 - la conception UML d'une base de données relationnelle
